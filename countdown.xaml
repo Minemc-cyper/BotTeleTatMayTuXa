@@ -1,0 +1,21 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="⚠️ Cảnh báo tắt máy"
+        Height="250" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowStyle="SingleBorderWindow"
+        Background="White">
+    <Grid>
+        <TextBlock x:Name="CountdownText"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   FontFamily="Segoe UI"
+                   Foreground="Black"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   Text="Hết giờ chơi 🕒 Đang chuẩn bị tắt máy..." />
+    </Grid>
+</Window>

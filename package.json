@@ -1,0 +1,9 @@
+{
+  "name": "shutdown-bot",
+  "version": "1.0.0",
+  "bin": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  }
+}
