@@ -1,8 +1,7 @@
 <<<<<<< HEAD
 # A simple Telegram bot that can shutdown your computer remotely
 
-### Demo Video
-https://vt.tiktok.com/ZSFpqHQJT/
+
 
 ### Requirements
 1. [Node.js](https://nodejs.org/)
@@ -17,8 +16,3 @@ https://vt.tiktok.com/ZSFpqHQJT/
 5. Run the bot using `node index.js`
 6. Send `/tatmay` to the bot to shutdown your computer
 
-### Follow me on TikTok
-https://www.tiktok.com/@juno_okyo
-=======
-# BotTeleTatMayTuXa
->>>>>>> 21d6b22f6fe18ab1c65a2017a3ae0fefbf20e097
