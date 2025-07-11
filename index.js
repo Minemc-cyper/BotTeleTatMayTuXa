@@ -1,12 +1,21 @@
-﻿const { Telegraf } = require('telegraf');
+﻿require('dotenv').config();
+const express = require('express');
+const { Telegraf } = require('telegraf');
 const { exec } = require('child_process');
 const path = require('path');
+const Port = process.env.PORT || 3000;
 
 // === CẤU HÌNH BOT ===
-const BOT_TOKEN = '7777855722:AAEB09wB7wWui2GG9umPeDiWoOoGL5ySL5g'; // Thay bằng token thực tế
+const BOT_TOKEN= process.env.BOT_TOKEN
 const OWNER_ID = 6050099682; // Telegram ID cá nhân của bạn
-
 const bot = new Telegraf(BOT_TOKEN);
+const app = express();
+
+// Đăng Ký webhook
+bot.telegram.setWebhook('https://botteletatmaytuxa.onrender.com/bot'); 
+
+//Webhook
+app.use(bot.webhookCallback('/bot'));
 
 // === LOG MỖI LỆNH GỬI VỀ ===
 bot.use((ctx, next) => {
